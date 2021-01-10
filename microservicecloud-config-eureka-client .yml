@@ -16,10 +16,10 @@ eureka:
  regitser-with-eureka: false #当前的eureka-server自己不注册进服务列表中
  fetch-registry: false #不通过eureka获取注册信息
  service-url:
-  defaultZone: http://eureka-dev.com:7001/eureka/
+  defaultZone: http://eureka7001.com:7001/eureka/
 ---
 server:
- port: 7001
+ port: 7001 #注册中心占用7001端口, 冒号后面必须要有空格
 spring:
  profiles: test       #测试环境
  application:
@@ -29,4 +29,4 @@ eureka:
   hostname: eureka7001.com #冒号后面必须要有空格
  client:
   service-url:
-   defaultZone: http://eureka-test.com:7001/eureka/
+   defaultZone: http://eureka7001.com:7001/eureka/
