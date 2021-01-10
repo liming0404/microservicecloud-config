@@ -23,7 +23,7 @@ server:
 spring:
  profiles: test       #测试环境
  application:
-  name: microservicecloud-config-client
+  name: microservicecloud-config-eureka-client
 eureka:
  instance:
   hostname: eureka7001.com #冒号后面必须要有空格
